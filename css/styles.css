@@ -175,7 +175,7 @@ button {
   margin-right: 40px;
 }
 
-/* ------Section Hero----- */
+/* ==============Section Hero============== */
 .hero {
   max-width: 1440px;
   width: 100%;
@@ -183,7 +183,7 @@ button {
   padding: 188px 0;
   background-position: center;
   align-items: center;
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background/hero_fon.jpg);
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background/hero_fon-desctop.jpg);
   background-size: cover;
   background-color: var(--color-customers);
   background-repeat: no-repeat;
