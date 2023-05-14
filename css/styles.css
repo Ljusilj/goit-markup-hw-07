@@ -393,7 +393,7 @@ button {
   fill: var(--color-white);
 }
 
-/* Section hero */
+/*==========Section hero=========== */
 .hero {
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background/hero_fon-mobile.jpg);
   background-size: cover;
@@ -414,12 +414,14 @@ button {
   color: var(--color-white);
   margin-bottom: 72px;
 }
+
 .style-title {
   max-width: 320px;
   margin-right: auto;
   margin-left: auto;
   text-align: center;
 }
+
 .btn-order-service {
   display: block;
   font-family: var(--secondary-font);
@@ -438,18 +440,23 @@ button {
   margin-left: auto;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .btn-order-service:hover,
 .btn-order-service:focus {
   background-color: var(--color-hover);
   border-radius: 4px;
 }
+
 /* To 767 */
 
-@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2),
+screen and (max-width: 767px) and (min-resolution: 192dpi),
+screen and (max-width: 767px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background/hero_fon-mobile@2x.jpg);
   }
 }
+
 /* From 768 + */
 @media screen and (min-width: 768px) {
   .main-title {
@@ -458,6 +465,7 @@ button {
     letter-spacing: 0.02em;
     color: var(--color-white);
   }
+
   .style-title {
     max-width: 496px;
   }
@@ -470,110 +478,124 @@ button {
     background-size: cover;
     max-width: 768px;
   }
+
   .main-title {
     margin-bottom: 36px;
   }
 }
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+screen and (min-width: 768px) and (min-resolution: 192dpi),
+screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background/hero_fon-tablet@2x.jpg);
   }
 }
+
 /* From 1200 and + */
 @media screen and (min-width: 1200px) {
   .hero {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background/hero_fon-desctop.jpg);
     max-width: 1440px;
-}
-.main-title {
-  margin-bottom: 48px;
-}
   }
 
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .main-title {
+    margin-bottom: 48px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+screen and (min-width: 1200px) and (min-resolution: 192dpi),
+screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background/hero_fon-desktop@2x.jpg);
   }
 }
 
-/* Section 1 */
+/*=============Section============= 1 */
 .advantages {
   padding-top: 96px;
   padding-bottom: 96px;
 }
+
 .card-thumb {
   display: none;
 }
+
 .fiex-elemens {
   max-width: 396px;
- 
 }
+
 .card-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
   color: var(--color-link);
-  
 }
+
 .size-style {
   margin-bottom: 8px;
 }
+
 .advantages-card-text {
   font-style: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-text);
- margin-top: 0;
-  margin-bottom: 0; 
+  margin-top: 0;
+  margin-bottom: 0;
 }
+
 /* To 767 */
 @media screen and (max-width: 767px) {
   .card-title {
     text-align: center;
   }
-  .fiex-elemens:not(:last-child) {
-margin-bottom: 72px;
-  }
-  }
-  /* From 768 + */
-@media screen and (min-width: 768px) {
 
+  .fiex-elemens:not(:last-child) {
+    margin-bottom: 72px;
+  }
 }
-  /* From 768 to 1200 */
+
+/* From 768 to 1200 */
 @media screen and (min-width: 768px) and (max-width: 1200px) {
-  
+
   .flex-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 24px;
-   
+    column-gap: 24px;
+    row-gap: 72px;
+
   }
- 
-.fiex-elemens {
- max-width: 356px;
-width: calc((100% - 24px)/2);
- }
+
+  .fiex-elemens {
+    max-width: 356px;
+    width: calc((100% - 24px)/2);
+  }
 }
-  /* From 1200 and + */
+
+/* From 1200 and + */
 @media screen and (min-width: 1200px) {
-    .advantages {
-      padding-top: 120px;
-      padding-bottom: 120px;
-    }
-    .card-thumb {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 8px;
-      background-color: var(--color-footer);
-      width: 264px;
-      height: 112px;
-      align-content: center;
-      border-radius: 4px;
+  .advantages {
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
+
+  .card-thumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+    background-color: var(--color-footer);
+    width: 264px;
+    height: 112px;
+    align-content: center;
+    border-radius: 4px;
+  }
+
   .card-title {
     font-weight: 500;
     font-size: 20px;
@@ -581,134 +603,127 @@ width: calc((100% - 24px)/2);
     letter-spacing: 0.02em;
     color: var(--color-link);
   }
- 
+
   .advantages-card-text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--color-text);
   }
+
   .flex-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+   gap: 24px;
+   
   }
+
   .fiex-elemens {
     display: flex;
     flex-wrap: wrap;
     width: calc((100% - 72px) / 4);
   }
+
   .fiex-elemens:nth-last-child(4) {
     margin-right: 0%;
   }
-} 
-/* ------Components------ */
-/* 
+}
 
+/* ------Section 2------ */
+@media screen and (max-width: 1199px) {
+  .job-images {
+    display: none;
+  }
+}
 
-}  */
-/* .title-about {
+/* From 1200 and + */
+@media screen and (min-width: 1200px) {
+  .job-images {
+    display: vis
+  }
+
+  .flex-container-jobs {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+   
+  }
+
+  .flex-elements-job {
+    width: 360px;
+  }
+
+  .flex-container-jobs:nth-child(3) {
+    margin-right: 0;
+  }
+
+  .job-images {
+    padding-bottom: 120px;
+  }
+
+  .title-about {
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--color-link);
+    text-align: center;
+  }
+
+  .flex-title-about {
+    margin-bottom: 72px;
+  }
+}
+
+/* ===========Section 3==============*/
+.team {
+  padding-top: 96px;
+  padding-bottom: 96px;
+  background-color: var(--color-footer);
+}
+
+.title-about {
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--color-link);
   text-align: center;
-}  */
-
-/* ------Section 1------ */
-/* 
-
-
-
-.size-style {
-  margin-bottom: 8px;
-}
-
-
-} */
-
-/* ------Section 2------ */
-.flex-container-jobs {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-}
-
-.flex-elements-job {
-  width: 360px;
-}
-
-.flex-container-jobs:nth-child(3) {
-  margin-right: 0;
-}
-
-.job-images {
-  padding-bottom: 120px;
-}
-
-.flex-title-about {
-  margin-bottom: 72px;
-}
-
-/* ------Section 3------ */
-.team {
-  background-color: var(--color-footer);
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-
-.card-description {
-  background-color: var(--color-white);
 }
 
 .title-flex {
   margin-bottom: 72px;
 }
 
-.team-content {
-  padding: 32px 0;
-}
-
-.flex-container-cards {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-}
-
 .flex-elements-cards {
-  width: calc((100% – 72px)/4);
   box-shadow: 0px 1px 6px var(--color-shadow),
     0px 1px 1px var(--color-shadow-dark),
     0px 2px 1px var(--color-shadow);
   border-radius: 0px 0px 4px 4px;
+  max-width: 264px; 
 }
-
-.flex-elements-cards:nth-child(4) {
-  margin-right: 0;
+.team-content {
+  padding: 32px 0;
+  background-color: var(--color-white);
 }
-
 .bottom-title {
   margin-bottom: 8px;
   text-align: center;
 }
-
 .flex-card-text {
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
 }
-
 .social-list {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 24px;
   margin-top: 8px;
-  padding-bottom: 32px;
    padding-left: 16px;
   padding-right: 16px; 
 }
-
-
 .team-list-link {
   display: flex;
   justify-content: center;
@@ -719,18 +734,56 @@ width: calc((100% - 24px)/2);
   background-color: var(--color-logo);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .team-list-link:hover,
 .team-list-link:focus {
   background-color: var(--color-hover);
 }
-
 .social-list-icon {
   fill: var(--color-footer);
 }
+/* To 767px */
+@media screen and (max-width: 767px) {
+.flex-elements-cards {
+  margin: 0 auto;
+}
+.flex-elements-cards:not(:last-child) {
+  margin-bottom: 72px;
+}
+}
+/* From 768 to 1200 */
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .flex-container-cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    row-gap: 64px;
+    column-gap: 24px;
+  }
+}
+
+/* From 1200 and + */
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .flex-container-cards {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+  .flex-elements-cards {
+    width: calc((100% – 72px)/4);
+  }
+  .flex-elements-cards:nth-child(4) {
+    margin-right: 0;
+  }
+}
 
 /* Section 4 */
-.customers-section {
+/* .customers-section {
   padding-top: 120px;
   padding-bottom: 120px;
 }
@@ -750,7 +803,6 @@ width: calc((100% - 24px)/2);
   color: var(--color-link);
   margin-bottom: 72px;
 }
-
 .customers-list-item {
   flex-basis: calc((100% - 120px) / 6);
 }
@@ -778,7 +830,7 @@ width: calc((100% - 24px)/2);
   height: 100%;
   max-width: 104px;
   max-height: 56px;
-}
+} */
 
 /* =============Footer============ */
 .footer {
