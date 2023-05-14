@@ -497,28 +497,115 @@ button {
 }
 
 /* Section 1 */
+.advantages {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
 .card-thumb {
   display: none;
 }
- @media screen and (max-width: 767px) {
-  .card-thumb-icons {
-    display: none;
-  }
-} 
-/* ------Components------ */
-/* .card-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+.fiex-elemens {
+  max-width: 396px;
+ 
+}
+.card-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   color: var(--color-link);
+  
 }
-
-.card-text {
+.size-style {
+  margin-bottom: 8px;
+}
+.advantages-card-text {
+  font-style: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-text);
+ margin-top: 0;
+  margin-bottom: 0; 
+}
+/* To 767 */
+@media screen and (max-width: 767px) {
+  .card-title {
+    text-align: center;
+  }
+  .fiex-elemens:not(:last-child) {
+margin-bottom: 72px;
+  }
+  }
+  /* From 768 + */
+@media screen and (min-width: 768px) {
+
+}
+  /* From 768 to 1200 */
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+   
+  }
+ 
+.fiex-elemens {
+ max-width: 356px;
+width: calc((100% - 24px)/2);
+ }
+}
+  /* From 1200 and + */
+@media screen and (min-width: 1200px) {
+    .advantages {
+      padding-top: 120px;
+      padding-bottom: 120px;
+    }
+    .card-thumb {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 8px;
+      background-color: var(--color-footer);
+      width: 264px;
+      height: 112px;
+      align-content: center;
+      border-radius: 4px;
+  }
+  .card-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--color-link);
+  }
+ 
+  .advantages-card-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--color-text);
+  }
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .fiex-elemens {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc((100% - 72px) / 4);
+  }
+  .fiex-elemens:nth-last-child(4) {
+    margin-right: 0%;
+  }
+} 
+/* ------Components------ */
+/* 
+
+
 }  */
 /* .title-about {
   font-size: 36px;
@@ -530,42 +617,16 @@ button {
 }  */
 
 /* ------Section 1------ */
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-}
+/* 
 
-.fiex-elemens {
-  display: flex;
-  flex-wrap: wrap;
-  width: calc((100% - 72px) / 4);
-}
 
-.fiex-elemens:nth-last-child(4) {
-  margin-right: 0%;
-}
-
-.advantages {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
 
 .size-style {
   margin-bottom: 8px;
 }
 
-.card-thumb {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 8px;
-  background-color: var(--color-footer);
-  width: 264px;
-  height: 112px;
-  align-content: center;
-  border-radius: 4px;
-}
+
+} */
 
 /* ------Section 2------ */
 .flex-container-jobs {
@@ -643,8 +704,8 @@ button {
   gap: 24px;
   margin-top: 8px;
   padding-bottom: 32px;
-  padding-left: 16px;
-  padding-right: 16px;
+   padding-left: 16px;
+  padding-right: 16px; 
 }
 
 
