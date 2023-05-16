@@ -23,6 +23,7 @@
         <a href="./index.html" class="logo link flex-logo">Web
           <span class="studio-logo">Studio</span>
         </a>
+        
         <ul class="menu list">
           <li class="menu-item link">
             <a href="./index.html" class="menu-link link flex-link">Studio</a>
@@ -35,16 +36,79 @@
           </li>
         </ul>
       </nav>
+      <button type="button" class="mobile-menu-open js-open-menu" js-open-menu>
+        <svg class="mobile-icon" width="32" height="22">
+          <use href="./images/icons.svg#burger-icon"></use>
+        </svg>
+      </button>
       <address class="contacts">
-        <ul class="menu-contact list flex-header-list">
-          <li>
+        <ul class="menu-contact list">
+          <li class="header-item-contact">
             <a href="mailto:info@devstudio.com" class="mail contact-mail link">info@devstudio.com</a>
           </li>
-          <li>
-            <a href="tel:+110001111111" class="phone-number link">+11 (000) 111-11-11</a>
+          <li class="header-item-contact">
+            <a href="tel:+110001111111" class="contact-mail link">+11 (000) 111-11-11</a>
           </li>
         </ul>
       </address>
+    </div>
+    <!-- Mobile menu -->
+    <div class="mobile-menu is-open js-menu-container" js-menu-container>
+      <div class="container mobile-menu_container">
+        <button type="button" class="mobile-close-btn js-close-menu" js-close-menu>
+          <svg class="mobile-close-btn-icon" width="24" height="24">
+            <use href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
+        <div class="mobile-wrapper-flex">
+          <ul class="list mobile-menu_item ">
+            <li class="mobile-item"> 
+              <a href="" class="link mobile-link">Studio</a> 
+            </li>
+            <li class="mobile-item"> 
+              <a href="" class="link mobile-link">Portfolio</a> 
+            </li>
+            <li class="mobile-item">
+              <a href="" class="link mobile-link">Contacts</a> 
+            </li>
+          </ul>
+          <ul class="list mobile-item-contact">
+            <li>
+              <a href="tel:+110001111111" class="link mobile-link-phone">+11 (000) 111-11-11</a>
+              </li>
+            <li>
+              <a href="mailto:info@devstudio.com" class="link mobile-link-email">info@devstudio.com</a>
+              </li>
+          </ul> 
+        </div>
+        
+        <ul class="list mobile-list-icons">
+          <li class="mobile-item-icons">
+            <a href="" class="mobile-link-icons">
+              <svg width="24" height="24" class="mobile-icons">
+                <use href="./images/icons.svg#instagram"></use>
+              </svg> </a>
+          </li>
+          <li class="mobile-item-icons">
+            <a href="" class="mobile-link-icons">
+              <svg width="24" height="24" class="mobile-icons">
+                <use href="./images/icons.svg#twitter"></use>
+              </svg> </a>
+          </li>
+          <li class="mobile-item-icons">
+            <a href="" class="mobile-link-icons">
+              <svg width="24" height="24" class="mobile-icons">
+                <use href="./images/icons.svg#facebook"></use>
+              </svg> </a>
+          </li>
+          <li class="mobile-item-icons"> <a href="" class="mobile-link-icons">
+            <svg width="24" height="24" class="mobile-icons">
+              <use href="./images/icons.svg#linkedin"></use>
+            </svg>
+          </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </header>
   <main>
@@ -90,7 +154,7 @@
                   type="image/webp"/>
                   <source srcset="./images/portfolio-project-card/bank-app-mobile.jpg 1x, ./images/portfolio-project-card/bank-app-mobile@2x.jpg 2x"
                   media="(max-width: 767px)"/>
-                  <img src="./images/portfolio-project-card/bank-app-desktop.jpg" alt="bank-app" width="360" height="300" />
+                  <img src="./images/portfolio-project-card/bank-app-mobile.jpg" alt="bank-app" width="396" height="280" />
                 </picture>
                 
                 <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker
@@ -99,8 +163,8 @@
                 </p>
               </div>
               <div class="flex-container-portfolio">
-                <h2 class="card-title flex-title">Banking App Interface Concept </h2>
-                <p class="card-text flex-text">App </p>
+                <h2 class="card-title portfolio-title">Banking App Interface Concept </h2>
+                <p class="portfolio-text">App </p>
               </div>
             </a>
           </li>
@@ -123,7 +187,7 @@
                   type="image/webp"/>
                   <source srcset="./images/portfolio-project-card/cash-pay-mobile.jpg 1x, ./images/portfolio-project-card/cash-pay-mobile@2x.jpg 2x"
                   media="(max-width: 767px)"/>
-                  <img src="./images/portfolio-project-card/cash-pay-desktop.jpg" alt="cash-pay" width="360" height="300" />
+                  <img src="./images/portfolio-project-card/cash-pay-mobile.jpg" alt="cash-pay" width="396" height="280" class="portfolio-img" />
                 </picture>
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
@@ -132,8 +196,8 @@
                 </p>
               </div>
               <div class="flex-container-portfolio">
-                <h2 class="card-title flex-title">Cashless Payment </h2>
-                <p class="card-text flex-text">Marketing </p>
+                <h2 class="card-title portfolio-title">Cashless Payment </h2>
+                <p class="portfolio-text">Marketing </p>
               </div>
             </a>
           </li>
@@ -156,7 +220,7 @@
                   type="image/webp"/>
                   <source srcset="./images/portfolio-project-card/mediation-app-mobile.jpg 1x, ./images/portfolio-project-card/mediation-app-mobile@2x.jpg 2x"
                   media="(max-width: 767px)"/>
-                  <img src="./images/portfolio-project-card/mediation-app-desktop.jpg" alt="meditation-app" width="360" height="300" />
+                  <img src="./images/portfolio-project-card/mediation-app-mobile.jpg" alt="meditation-app" width="396" height="280" />
                 </picture>                    
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
@@ -165,8 +229,8 @@
                 </p>
               </div>
               <div class="flex-container-portfolio">
-                <h2 class="card-title flex-title">Meditation App </h2>
-                <p class="card-text flex-text">App </p>
+                <h2 class="card-title portfolio-title">Meditation App </h2>
+                <p class="portfolio-text">App </p>
               </div>
             </a>
           </li>
@@ -189,7 +253,7 @@
                   type="image/webp"/>
                   <source srcset="./images/portfolio-project-card/taxi-mobile.jpg 1x, ./images/portfolio-project-card/taxi-mobile@2x.jpg 2x"
                   media="(max-width: 767px)"/>
-                  <img src="./images/portfolio-project-card/taxi-desktop.jpg" alt="taxi" width="360" height="300" />
+                  <img src="./images/portfolio-project-card/taxi-mobile.jpg" alt="taxi" width="396" height="280" />
                 </picture>
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
@@ -198,8 +262,8 @@
                 </p>
               </div>
               <div class="flex-container-portfolio">
-                <h2 class="card-title flex-title">Taxi Service </h2>
-                <p class="card-text flex-text">Marketing </p>
+                <h2 class="card-title portfolio-title">Taxi Service </h2>
+                <p class="portfolio-text">Marketing </p>
               </div>
             </a>
           </li>
@@ -222,7 +286,7 @@
                   type="image/webp"/>
                   <source srcset="./images/portfolio-project-card/screen-mobile.jpg 1x, ./images/portfolio-project-card/screen-mobile@2x.jpg 2x"
                   media="(max-width: 767px)"/>
-                  <img src="./images/portfolio-project-card/screen-desktop.jpg" alt="screen" width="360" height="300" />
+                  <img src="./images/portfolio-project-card/screen-mobile.jpg" alt="screen" width="396" height="280" />
                 </picture>
                 
                 <p class="overlay">
@@ -232,8 +296,8 @@
                 </p>
               </div>
               <div class="flex-container-portfolio">
-                <h2 class="card-title flex-title">Screen Illustrations </h2>
-                <p class="card-text flex-text">Design </p>
+                <h2 class="card-title portfolio-title">Screen Illustrations </h2>
+                <p class="portfolio-text">Design </p>
               </div>
             </a>
           </li>
@@ -256,7 +320,7 @@
                   type="image/webp"/>
                   <source srcset="./images/portfolio-project-card/courses-mobile.jpg 1x, ./images/portfolio-project-card/courses-mobile@2x.jpg 2x"
                   media="(max-width: 767px)"/>
-                  <img src="./images/portfolio-project-card/courses-desktop.jpg" alt="courses" width="360" height="300" />
+                  <img src="./images/portfolio-project-card/courses-mobile.jpg" alt="courses" width="396" height="280" />
                 </picture>
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
@@ -265,8 +329,8 @@
                 </p>
               </div>
               <div class="flex-container-portfolio">
-                <h2 class="card-title flex-title">Online Courses </h2>
-                <p class="card-text flex-text">Marketing </p>
+                <h2 class="card-title portfolio-title">Online Courses </h2>
+                <p class="portfolio-text">Marketing </p>
               </div>
             </a>
           </li>
@@ -289,7 +353,7 @@
                   type="image/webp"/>
                   <source srcset="./images/portfolio-project-card/stories-mobile.jpg 1x, ./images/portfolio-project-card/stories-mobile@2x.jpg 2x"
                   media="(max-width: 767px)"/>
-                  <img src="./images/portfolio-project-card/stories-desktop.jpg" alt="inst-stories" width="360" height="300" />
+                  <img src="./images/portfolio-project-card/stories-mobile.jpg" alt="inst-stories" width="396" height="280" />
                 </picture>
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
@@ -298,8 +362,8 @@
                 </p>
               </div>
               <div class="flex-container-portfolio">
-                <h2 class="card-title flex-title">Instagram Stories Concept </h2>
-                <p class="card-text flex-text">Design </p>
+                <h2 class="card-title portfolio-title">Instagram Stories Concept </h2>
+                <p class="portfolio-text">Design </p>
               </div>
             </a>
           </li>
@@ -322,7 +386,7 @@
                   type="image/webp"/>
                   <source srcset="./images/portfolio-project-card/food-mobile.jpg 1x, ./images/portfolio-project-card/food-mobile@2x.jpg 2x"
                   media="(max-width: 767px)"/>
-                  <img src="./images/portfolio-project-card/food-desktop.jpg" alt="fresh-food" width="360" height="300" />
+                  <img src="./images/portfolio-project-card/food-mobile.jpg" alt="fresh-food" width="396" height="280" />
                 </picture>
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
@@ -331,8 +395,8 @@
                 </p>
               </div>
               <div class="flex-container-portfolio">
-                <h2 class="card-title flex-title">Organic Food </h2>
-                <p class="card-text flex-text">Web Site </p>
+                <h2 class="card-title portfolio-title">Organic Food </h2>
+                <p class="portfolio-text">Web Site </p>
               </div>
             </a>
           </li>
@@ -355,7 +419,7 @@
                   type="image/webp"/>
                   <source srcset="./images/portfolio-project-card/coffee-mobile.jpg 1x, ./images/portfolio-project-card/coffee-mobile@2x.jpg 2x"
                   media="(max-width: 767px)"/>
-                  <img src="./images/portfolio-project-card/coffee-desktop.jpg" alt="coffee" width="360" height="300" />
+                  <img src="./images/portfolio-project-card/coffee-mobile.jpg" alt="coffee" width="396" height="280" />
                 </picture>
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
@@ -364,8 +428,8 @@
                 </p>
               </div>
               <div class="flex-container-portfolio">
-                <h2 class="card-title flex-title">Fresh Coffee </h2>
-                <p class="card-text flex-text">Web Site </p>
+                <h2 class="card-title portfolio-title">Fresh Coffee </h2>
+                <p class="portfolio-text">Web Site </p>
               </div>
             </a>
           </li>
@@ -434,6 +498,7 @@
       </div>
     </div>
   </footer>
+  <script  src="./css/js/mobile-menu.js"></script>
 </body>
 
 </html>
