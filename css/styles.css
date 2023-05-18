@@ -57,7 +57,7 @@ button {
   padding-right: 15px;
 }
 
-/* Media for mobile */
+/* ------Media for mobile------- */
 @media screen and (min-width: 428px) {
   .container {
     width: 426px;
@@ -81,14 +81,14 @@ button {
   }
 }
 
-/* Media for tablet */
+/* -----Media for tablet------- */
 @media screen and (min-width: 768px) {
   .container {
     width: 766px;
   }
 }
 
-/* Media for container */
+/* -----Media for desktop------ */
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1158px;
@@ -96,7 +96,7 @@ button {
   }
 }
 
-/* =========Header========= */
+/* =================Header================== */
 .page-header {
   padding-top: 24px;
   padding-bottom: 22px;
@@ -119,12 +119,10 @@ button {
   text-transform: uppercase;
   text-decoration: none;
   color: var(--color-logo);
-  
 }
 
 .studio-logo {
   color: var(--color-link);
-  
 }
 
 .mobile-menu-open {
@@ -139,7 +137,7 @@ button {
   stroke-width: 4px;
 }
 
-/* To 767 */
+/* To 767px */
 @media screen and (max-width: 767px) {
   .menu {
     display: none;
@@ -272,7 +270,7 @@ button {
 }
 
 
-/* Mobile menu */
+/* ===========Mobile menu=========== */
 .mobile-menu {
   position: fixed;
   top: 0;
@@ -342,7 +340,6 @@ button {
   flex-direction: column;
   row-gap: 40px;
   margin-bottom: 48px;
-
 }
 
 .mobile-link-phone {
@@ -350,7 +347,6 @@ button {
   font-size: 36px;
   line-height: 1.11;
   color: #434455;
-
 }
 
 .mobile-link-phone:hover,
@@ -395,7 +391,7 @@ button {
   fill: var(--color-white);
 }
 
-/*==========Section hero=========== */
+/*=================Section Hero============== */
 .hero {
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background/hero_fon-mobile.jpg);
   background-size: cover;
@@ -514,7 +510,7 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   }
 }
 
-/*=============Section 1=============  */
+/*=====================Section 1======================  */
 .advantages {
   padding-top: 96px;
   padding-bottom: 96px;
@@ -617,7 +613,6 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
-
   }
 
   .fiex-elemens {
@@ -631,7 +626,7 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   }
 }
 
-/* ------Section 2------ */
+/* ==============Section 2================ */
 @media screen and (max-width: 1199px) {
   .job-images {
     display: none;
@@ -646,7 +641,6 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
     align-items: center;
     justify-content: center;
     gap: 24px;
-
   }
 
   .flex-elements-job {
@@ -675,7 +669,7 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   }
 }
 
-/* ===========Section 3==============*/
+/* ===============Section 3==============*/
 .team {
   padding-top: 96px;
   padding-bottom: 96px;
@@ -795,7 +789,7 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   }
 }
 
-/* Section 4 */
+/* ================Section=============== 4 */
 
 .customers-section {
   padding-top: 96px;
@@ -856,10 +850,6 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .customers-icons {
     max-width: 104px;
   }
-
-  /* .customers-list-item {
-    max-width: 168px;
-} */
 }
 
 /* From 768 to 1200 */
@@ -871,7 +861,6 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .customers-list-item {
     flex-basis: calc((100% - 72px) / 3);
   }
-
 }
 
 /* From 1200 and + */
@@ -887,12 +876,11 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   }
 
   .customers-list-item {
-
     flex-basis: calc((100% - 120px) / 6);
   }
 }
 
-/* =============Footer============ */
+/* ===============Footer=============== */
 .footer {
   background-color: var(--color-link);
   padding-top: 96px;
@@ -900,7 +888,6 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
 }
 
 .studio-logotype {
-  /* display: inline-block; */
   color: var(--color-footer);
 }
 
@@ -991,7 +978,6 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
 }
 
 .footer-btn {
-  /* margin-left: 24px; */
   display: flex;
   gap: 16px;
   width: 165px;
@@ -1111,14 +1097,6 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
     margin-right: 88px;
   }
 }
-
-/* 
-.content {
-  padding: 32px 16px;
-  border-radius: 0px 0px 4px 4px;
-}
-
-}} */
 
 /*============== Portfolio=============== */
 .page-header {
@@ -1327,7 +1305,6 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
 
     max-width: 360px;
     flex-basis: calc((100%-48px)/3);
-
   }
 
   .flex-cards:nth-child(3n) {
@@ -1338,30 +1315,6 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
     margin-bottom: 0;
   }
 }
-
-/* 
-
-.logo-footer {
-  background-color: var(--color-link);
-}
-
-
-
-
-
-.flex-link {
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
-
-.flex-header-list {
-  gap: 40px;
-}
-
-
-
-
-
 
 /* ================Modal=================== */
 
@@ -1597,8 +1550,6 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   padding: 16px 32px;
 }
-
-*/
 
 /* From 768 to ~ */
 @media screen and (min-width: 768px) {
